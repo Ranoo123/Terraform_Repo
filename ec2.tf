@@ -4,11 +4,12 @@ provider "aws" {
 terraform {
   required_providers {
     mycloud = {
-      source  = "mycorp/mycloud"
+      source  = "hashicorp/aws"
       version = "5.28.0"
     }
   }
 }
+
 
 
 resource "aws_instance" "myec2" {
